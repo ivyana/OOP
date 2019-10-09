@@ -49,13 +49,13 @@ public class Main {
         University u3 = new University("Z", 1989, new Student[]{s3, s5});
 
 
-        double avg1 = getAverage(getArrMarks(u1));
+        double avg1 = getStudentsAverageMark(u1);
         System.out.println("Average mark in the first university is: " + avg1);
 
-        double avg2 = getAverage(getArrMarks(u2));
+        double avg2 = getStudentsAverageMark(u2);
         System.out.println("Average mark in the first university is: " + avg2);
 
-        double avg3 = getAverage(getArrMarks(u3));
+        double avg3 = getStudentsAverageMark(u3);
         System.out.println("Average mark in the first university is: " + avg3);
 
         double[] array = {avg1, avg2, avg3};

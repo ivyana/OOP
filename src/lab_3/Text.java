@@ -1,4 +1,4 @@
-package lab3;
+package lab_3;
 
 import java.util.*;
 
@@ -47,9 +47,16 @@ public class Text {
         return vowelCount;
     }
 
-    public int countConsonants() {
-        return (countLetters() - countVowels()) / 2;
-    }
+ public int countConsonants() {
+     text = text.toLowerCase();
+     for (int i = 0; i < this.textArray.length; i++) {
+         if ((text.charAt(i) >= 'a' && text.charAt(i) <= 'z') && (text.charAt(i) != 'a' && text.charAt(i) != 'e' && text.charAt(i) != 'i'
+                 && text.charAt(i) != 'o' && text.charAt(i) != 'u')) {
+             consonantCount++;
+         }
+     }
+     return consonantCount;
+ }
 
     public String getLongestWord() {
         String[] words = this.text.split("\\s+");
@@ -94,4 +101,3 @@ public class Text {
         return key;
     }
 }
-
